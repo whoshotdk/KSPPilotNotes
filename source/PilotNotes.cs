@@ -212,12 +212,18 @@ namespace PilotNotes
 				
 				logDebug("Matching CID in vessel dictionary not found.");
 
-				currentVesselDescription = "No description has been set for this craft, or the original .craft file could not be located.";
+				currentVesselDescription = "No description can be displayed as the original .craft file could not be located for this vessel.";
 
 				return;
 			}
 
 			currentVesselDescription = vesselData[vesselCID].ToString();
+
+			if (String.IsNullOrEmpty (currentVesselDescription)) {
+
+				currentVesselDescription = "This vessel does not have a description.";
+			}
+
 			logDebug("Description is " + currentVesselDescription + ".");
 		}
 		
