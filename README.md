@@ -7,6 +7,10 @@ This plugin adds a button the the toolbar during flight. Clicking the button wil
 
 Download and extract the ZIP file, then place the PilotNotes/ folder found in GameData/ into your KSP GameData/ folder.
 
+## Important notes
+
+PilotNotes will only display vessel descriptions for vessels that have an originating .craft file saved to disk.
+
 ## Thanks
 
 With many thanks to the kind people at IRC channel #kspmodders who helped me overcome some bugs;
